@@ -1,6 +1,6 @@
 <?php
 
-namespace CorneHQ\BooleanDatetime;
+namespace PragmaRX\BooleanDatetime;
 
 use Exception;
 use DateTimeInterface;
@@ -75,6 +75,12 @@ class BooleanDatetime extends Field
             $attribute,
             $resolveCallback ??
                 function ($value) {
+                    if (!$value instanceof DateTimeInterface) {
+                        throw new Exception(
+                            "DateTime field must cast to 'datetime' in Eloquent model."
+                        );
+                    }
+
                     return $value->format('Y-m-d H:i:s');
                 }
         );
