@@ -1,6 +1,6 @@
 <?php
 
-namespace CorneHQ\BooleanDatetime;
+namespace PragmaRX\BooleanDatetime;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
