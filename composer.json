@@ -1,5 +1,5 @@
 {
-    "name": "pragmarx/nova-boolean-datetime-field",
+    "name": "cornehq/nova-boolean-datetime-field",
     "description": "A Laravel Nova Boolean DateTime field.",
     "keywords": [
         "laravel",
@@ -12,13 +12,13 @@
     },
     "autoload": {
         "psr-4": {
-            "PragmaRX\\BooleanDatetime\\": "src/"
+            "CorneHQ\\BooleanDatetime\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "PragmaRX\\BooleanDatetime\\FieldServiceProvider"
+                "CorneHQ\\BooleanDatetime\\FieldServiceProvider"
             ]
         }
     },
